@@ -7,7 +7,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>3D graphics</h1>
+      <h1
+        style={{ textAlign: "center", fontFamily: "cursive", color: "blue" }}
+      >
+        3D GRAPHICS
+      </h1>
       <Retrieve onLoad={setExcelData} />
       {excelData && <Display data={excelData} />}
     </div>
